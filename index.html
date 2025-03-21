@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="vel.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href=
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+	<title>⛈️ WEATHER App</title>
+</head>
+
+<body>
+	<div class="ab">
+		<div class="weather-card">
+			
+			<h1>
+				WEATHER APP
+			</h1>
+			<input type="text" id="city-input"
+				placeholder="Enter your location">
+			<button id="city-input-btn"
+					onclick="weatherFn($('#city-input').val())">
+				      Get Weather
+		</button>
+			<div id="weather-info"
+				class="cd">
+				<h3 id="city-name"></h3>
+				<h4><p id="date"></p></h4>
+				<div class="img">
+                    <img src="./images/weather02-64.webp" alt="">
+                </div>
+                <div id="color">
+				<h3><p id="temperature"></p></h3>
+				<h3><p id="description"></p></h3>
+				<h3><p id="wind-speed"></p></h3>
+            </div>
+			</div>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="vel.js"></script>
+</body>
+</html>
+
